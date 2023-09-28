@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #090605;
+    
+    
+}
+
+h1 {
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.wrapper {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav nav nav nav nav nav"
+    "main main main main main main"
+    "footer footer footer footer footer footer";
+}
+
+.navigation {
+    grid-area: nav;
+    display: flex;
+    padding: 1.5rem;
+    border: 5px solid #121113;
+    justify-content: flex-end;
+    background-image: url(/img/bonz.ai-logo-white-landscape.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 1%;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+    margin-bottom: 0;
+    
+    
+    
+}
+
+.navigation_item {
+    border-right: 1px solid white;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    font-size: 1.5rem;
+    font-family: 'Source Code Pro', monospace;
+    
+}
+
+
+
+.main_cards {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+    
+    
+}
+
+.card {
+    
+    background-image: url(/img/08-night.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10rem;
+   
+}
+
+
+.hotel_text {
+    
+}
+
+
+
+
+.footer {
+    grid-area: footer;
+    
+}

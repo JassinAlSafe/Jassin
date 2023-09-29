@@ -37,11 +37,6 @@ h2 {
     "nav nav nav nav nav nav"
     "main main main main main main"
     "main main main main main main"
-    "main main main main main main"
-    "main main main main main main"
-    "main main main main main main"
-    "main main main main main main"
-    "main main main main main main"
     "box box box box box box"
     "box box box box box box"
     "footer footer footer footer footer footer";
@@ -172,8 +167,7 @@ h2 {
 /*Info. html*/
 
 .main_about {
-    width: 100vw;
-    height: 100vh;
+   
     grid-area: main;
     display: flex;
     align-items: center;
@@ -187,7 +181,7 @@ h2 {
     min-height: 20vh;
     
     margin-bottom: 2%;
-    margin-top: 85%;
+    margin-top: 5%;
 }
 .bonzai_logo {
     width: 20vw;

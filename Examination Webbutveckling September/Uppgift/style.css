@@ -379,6 +379,7 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .date_month_day {
@@ -386,7 +387,7 @@ h2 {
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    width: 90rem;
+    width: 100rem;
     padding: 6rem;
     background-color: green;
 }
@@ -401,25 +402,67 @@ h2 {
     font-size: 1.5rem;
     font-family: 'Source Code Pro', monospace;
     border-radius: 2rem;
+    border: 5px solid black;
+}
+
+.search {
+    align-self: flex-end;
 }
 
 .search_button {
-    
-    font-size: 14px;
-    line-height: 1;
-    border-radius: 500px;
-    transition-property: background-color,border-color,color,box-shadow,filter;
-    transition-duration: .3s;
-    border: 1px solid transparent;
-    letter-spacing: 2px;
-    min-width: 160px;
-    text-transform: uppercase;
-    white-space: normal;
-    font-weight: 700;
-    text-align: center;
-    padding: 16px 14px 18px;
-    color: #616467;
-    box-shadow: inset 0 0 0 2px #616467;
     background-color: white;
-    height: 48px;
+    padding: 1.5em;
+    width: 10rem;
+    border-radius: 2rem;
+    border: 5px solid black;
+    margin-left: 0;
+    
+}
+
+.search_button h2 {
+    font-size: 1rem;
+    color: #090605;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.room_booking {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.room {
+    width: 60vw;
+    height: 30vh;
+    background-color: white;
+    margin: 2em;
+}
+
+.room_one {
+  display: flex;
+}
+
+.roomimg {
+    width: 24vw;
+    height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.room_one_img {
+    background-image: url(/img/02-night.jpg);
+    
+
+}
+
+.room_two_img {
+    background-image: url(/img/03-night.jpg);
+}
+
+.room_three_img {
+    background-image: url(/img/05-night.jpg);
+}
+
+.room_four_img {
+    background-image: url(/img/07-night.jpg);
 }

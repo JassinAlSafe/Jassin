@@ -386,10 +386,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100rem;
     padding: 6rem;
-    background-color: green;
+    background-color: #090605;
+    border: 5px solid gray;
 }
 
 .checkin_picker {
@@ -397,12 +398,12 @@ h2 {
 }
 
 .date {
-    padding: 1em;
+    padding: 0.5em;
     background-color: whitesmoke;
     font-size: 1.5rem;
     font-family: 'Source Code Pro', monospace;
     border-radius: 2rem;
-    border: 5px solid black;
+    border: 3px solid black;
 }
 
 .search {
@@ -411,8 +412,9 @@ h2 {
 
 .search_button {
     background-color: white;
-    padding: 1.5em;
+    padding: 0.5em;
     width: 10rem;
+    height: 5rem;
     border-radius: 2rem;
     border: 5px solid black;
     margin-left: 0;
@@ -432,22 +434,56 @@ h2 {
 }
 
 .room {
+   
     width: 60vw;
     height: 30vh;
-    background-color: white;
+    background-color: #121415;
     margin: 2em;
-}
-
-.room_one {
-  display: flex;
+    
 }
 
 .roomimg {
-    width: 24vw;
+    min-width: 24vw;
     height: 30vh;
     background-size: cover;
     background-repeat: no-repeat;
+    border: 2px solid gray;
 }
+
+.room_text {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.button_booking {
+    align-self: flex-end;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    width: 8vw;
+    height: 10vh;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    
+    color: #616467;
+    box-shadow: inset 0 0 0 2px #616467;
+    background-color: transparent;
+    
+   
+}
+
+.room_one, .room_two, .room_three, .room_four {
+    display: flex;
+    
+    
+  }
 
 .room_one_img {
     background-image: url(/img/02-night.jpg);

@@ -456,8 +456,8 @@ h2 {
 
 .room {
    
-    max-width: 78vw;
-    max-height: 35vh;
+    max-width: 80vw;
+    height: auto;
     background-color: #121415;
     margin: 2em;
     overflow: hidden;
@@ -465,10 +465,8 @@ h2 {
 }
 
 .roomimg {
-    min-width: 28vw;
-    height: 35vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+    max-width: 45%;
+    height: auto;
     border: 2px solid gray;
 }
 
@@ -480,19 +478,20 @@ h2 {
 
 .button_booking {
     align-self: flex-end;
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 1;
     border-radius: 500px;
     transition-property: background-color,border-color,color,box-shadow,filter;
     transition-duration: .3s;
     border: 1px solid transparent;
     letter-spacing: 2px;
-    width: 8vw;
-    height: 10vh;
+    width: 10rem;
+    height: 3rem;
     text-transform: uppercase;
     white-space: normal;
     font-weight: 700;
     text-align: center;
+    margin-top: 10%;
     
     color: #616467;
     box-shadow: inset 0 0 0 2px #616467;
@@ -505,27 +504,13 @@ h2 {
     display: flex;
     
     
+    
   }
 
-.room_one_img {
-    background-image: url(/img/02-night.jpg);
-    
 
-}
-
-.room_two_img {
-    background-image: url(/img/03-night.jpg);
-}
-
-.room_three_img {
-    background-image: url(/img/05-night.jpg);
-}
-
-.room_four_img {
-    background-image: url(/img/07-night.jpg);
-}
-
-@media screen and (max-width: 768px)  {
+@media screen 
+and (min-width: 375px)
+and (max-width: 768px)  {
     
     h2 {
         font-size: 1rem;
@@ -657,24 +642,19 @@ h2 {
         flex-direction: column;
     }
 
-    .room_one .room {
+    .room {
         display: flex;
         flex-direction: column;
+        height: 100%;
     }
 
-    .room_one {
-        
+    .roomimg {
+        max-width: 100%;
     }
 
-
-
-
-
-
-
-
-
-
+    .button_booking {
+        align-self: center;
+    }
 
     .footer {
         flex-direction: column;

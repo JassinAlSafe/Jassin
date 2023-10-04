@@ -669,3 +669,26 @@ and (max-width: 768px)  {
         padding: 5%;
     }
 }
+
+@media screen 
+and (min-width: 769px)
+and (max-width: 1500px) {
+
+    .hotel_content, .hotel_botton {
+        align-self: baseline;
+        
+        
+    }
+    
+    .hotel_text {
+        font-size: 4rem;
+        letter-spacing: 4rem;
+        margin-left: auto;
+       
+    }
+
+   
+        
+        
+    
+}

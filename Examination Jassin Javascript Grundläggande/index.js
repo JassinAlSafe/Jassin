@@ -46,12 +46,26 @@ function togglePlanetInfo(planetElement, planetData) {
         <h1 class="planetName">${planetData.name}</h1>
         <h2 class="latinName">${planetData.latinName}</h2>
         <p class="planetDesc">${planetData.desc}</p>
+        <section class="border"></section>
+        <section class="grid-container">
+        <h3 class="div-1"> Omkrets <br> ${planetData.circumference}</h3>
+        <h3 class="div-2"> Max Temperatur <br> ${planetData.temp.day}</h3>
+        <h3 class="div-3"> Min Temperatur <br> ${planetData.temp.night}</h3>
+        <h3 class="div-4"> KM FRÅN SOLEN <br> ${planetData.distance}</h3>
+        </section>
+        <section class="border"></section>
+        <h3 class="moon-text"> Månar: <br> ${planetData.moons} </h3>
+        <button class="btn-close" onclick="closePlanetInfo()">Close</button>
         `;
-
 
         planetsInfo.appendChild(planetInfoDiv)
     }
 }
 
+//Create a function that closes the information after its displayed so you can get back and view the other planets
+function closePlanetInfo(){
+    const planetsInfo = document.getElementById("planetInfo");
+    planetsInfo.innerHTML = "";
+}
 
 planetInfo();

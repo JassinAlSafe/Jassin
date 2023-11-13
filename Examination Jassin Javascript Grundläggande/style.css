@@ -103,7 +103,7 @@ body {
     line-height: 100%;
     letter-spacing: 5px;
     text-align: center;
-    margin-right: 38%;
+    margin-right: 40%;
     margin-top: 5%;
 }
 
@@ -115,7 +115,7 @@ body {
     line-height: 100%;
     letter-spacing: 14.4px;
     text-align: center;
-    margin-left: 4%;
+    margin-left: 5%;
 }
 
 .planetDesc {
@@ -160,10 +160,13 @@ body {
 }
 
 .moon-text {
+    
     margin-left: 25%;
     margin-top: 3%;
     letter-spacing: 3px;
     font-size: 1.5rem;
+   
+    
 }
 
 .btn-close {

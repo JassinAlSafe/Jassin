@@ -18,7 +18,7 @@ async function planetInfo() {
     //Select the planet class from html
     const planetElements = document.querySelectorAll(".planet");
 
-    //Loop/Iterate over each planet element 
+    //Loop/Iterate over each planet element. Index has a purpose to access the data from the data.bodies.array. 
     planetElements.forEach((planetElement, index) => {
         planetElement.addEventListener("click", () => {      //When clicking display the information about the planets to the console.log
             togglePlanetInfo(planetElement, data.bodies[index]); //koppla den till toggleplanetInfo

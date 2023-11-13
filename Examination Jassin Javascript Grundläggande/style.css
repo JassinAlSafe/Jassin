@@ -5,6 +5,10 @@ body {
     background: linear-gradient(90deg, #0C164D 0%, #190B22 100%);
 }
 
+h1, p {
+    font-family: 'Secular One', sans-serif;
+}
+
 .header {
     margin: 0;
     margin-right: 10%;
@@ -61,7 +65,7 @@ body {
 .saturnwing {
     transform: translate(-22px, -129px);
     margin: 0;
-    animation: rotate 5s linear infinite;
+    animation: rotate 3s linear infinite;
 }
 
 @keyframes rotate {

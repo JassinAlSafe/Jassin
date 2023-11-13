@@ -60,8 +60,24 @@ body {
 
 .saturnwing {
     transform: translate(-22px, -129px);
-    
+    margin: 0;
+    animation: rotate 5s linear infinite;
 }
+
+@keyframes rotate {
+    0% {
+        transform: translate(-22px, -129px);
+    }
+    50% {
+        transform: translate(-10px, -125px);
+    }
+    100% {
+        transform: translate(-22px, -129px);
+    }
+
+}
+
+
 
 .saturnimg {
     margin-top: 108px;

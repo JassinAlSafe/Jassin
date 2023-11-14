@@ -5,8 +5,12 @@ body {
     background: linear-gradient(90deg, #0C164D 0%, #190B22 100%);
 }
 
-h1, p {
+h1 {
     font-family: 'Secular One', sans-serif;
+}
+
+p {
+    font-family: Roboto Condensed;
 }
 
 .header {
@@ -107,15 +111,17 @@ h1, p {
 
 .planetName {
    
+    width: 50%;
     color: #fff;
     font-size: 4rem;
     font-weight: 600;
     line-height: 100%;
     letter-spacing: 5px;
-    text-align: center;
+    margin-left: 25%;
+    /* text-align: center;
     margin-right: 35%;
     
-    margin-top: 5%;
+    margin-top: 5%; */
 }
 
 .latinName {
@@ -125,8 +131,7 @@ h1, p {
     font-weight: 600;
     line-height: 100%;
     letter-spacing: 14.4px;
-    text-align: center;
-    margin-left: 7%;
+    margin-left: 25%;
 }
 
 .planetDesc {
@@ -148,6 +153,14 @@ h1, p {
     width: 50%;
     
     margin-left: 25%;
+    
+}
+
+.div-1, div-2, div-3, div-4 {
+    font-family: Secular One;
+    font-weight: 300;
+    
+    
     
 }
 

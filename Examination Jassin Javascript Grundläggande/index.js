@@ -42,6 +42,7 @@ function togglePlanetInfo(planetElement, planetData) {
         planetInfoDiv.classList.add("planet-info"); 
 
         //Where the information we want to show will be and then show to the user when clicking on a planet
+        
         planetInfoDiv.innerHTML = `
         <h1 class="planetName">${planetData.name}</h1>
         <h2 class="latinName">${planetData.latinName}</h2>
@@ -54,8 +55,10 @@ function togglePlanetInfo(planetElement, planetData) {
         <h3 class="div-4"> KM FRÅN SOLEN <br> ${planetData.distance}</h3>
         </section>
         <section class="border"></section>
-        <h3 class="moon-text"> Månar: <br> ${planetData.moons} </h3>
+        <h3 class="moon-text"> Månar: <br> <span class="moondata">${planetData.moons}</span> </h3>
+        <section class="button"> 
         <button class="btn-close" onclick="closePlanetInfo()">Close</button>
+        </section>
         `;
 
         planetsInfo.appendChild(planetInfoDiv)

@@ -1,14 +1,32 @@
 //Börja med att fetcha datan från API 
 
-async function getPlanets() {
-    let response = await fetch("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies", {
-    method: "GET",
-    headers: { "x-zocom": "solaris-1Cqgm3S6nlMechWO" },
-    
-})
-    return await response.json();
-    
+
+async function getApiKey() {
+    const response = await fetch("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys", {
+    method: "POST",
+   
+});
+    const data = await response.json();
+    console.log(data);
+    return data.key;
 }
+
+
+
+async function getPlanets() {
+    const key = await getApiKey();
+    console.log(key);
+    const response = await fetch("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies", {
+        headers: { 
+            "x-zocom": `${key}`, 
+    },
+    
+});
+    const data = await response.json();
+    return data;
+}
+
+
 
 // Fetch the data for info 
 

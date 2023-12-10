@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEE-VEE-DEE</title>
+    <!--Font-->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <section class="movie">
+        <div class="addMovie">
+            <button type="button" id="openModalBtn">&#61</button>
+        </div>
+    
+
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <form id="addMovieForm">
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="Title" />
+
+                <label for="genre">Genre</label>
+                <input type="text" id="genre" placeholder="Genre">
+
+                <label for="releaseDate">Release Date </label>
+                <input type="text" id="releaseDate" placeholder="Release Date">
+
+                <button type="button" id="addMovieBtn">Add Movie</button>
+
+            </form>
+        </div>
+    </div>
+</section>
+
+    <div class="container">
+        <section class="logo">
+            <img src="./img/dvd-cd-svgrepo-com.svg" alt="" class="logo" />
+        </section>
+        <h1>DEE-VEE-DEE</h1>
+        <section class="search-bar">
+            <input type="text" id="searchInput" placeholder="search movie" />
+            <button id="searchBtn">Search</button>
+        </section>
+    </div>
+
+    <div class="movie-list">
+        <h2>Movie List</h2>
+        <ul id="movieList" class="movie-grid"></ul>
+    </div>
+
+    <div id="descriptionModal" class="desc-modal">
+        <div class="desc-modal-content">
+            <span class="close" id="closeDescModalBtn">&times</span>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
     
 
     <script type="module" src="./js/index.js"></script>

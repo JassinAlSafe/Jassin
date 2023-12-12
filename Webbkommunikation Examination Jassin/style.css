@@ -1,3 +1,5 @@
+
+
 body {
   width: 100vw;
   height: 100vh;
@@ -153,8 +155,8 @@ body {
   grid-row: span 2;
 }
 
-.movie-info {
-}
+/* .movie-info {
+} */
 
 .front button {
   font-size: 16px;

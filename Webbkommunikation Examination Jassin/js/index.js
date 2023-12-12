@@ -16,6 +16,7 @@ import {
 const openModalBtn = document.getElementById("openModalBtn");
 const closeModalBtn = document.getElementById("closeModalBtn");
 const modal = document.getElementById("movieModal");
+const searchBtn = document.getElementById("searchBtn");
 
 openModalBtn.addEventListener("click", () => {
   modal.style.display = "block";
@@ -30,6 +31,45 @@ window.addEventListener("click", (event) => {
     modal.style.display = "none";
   }
 });
+
+//Function to search for a movie
+async function searchMovie(movieTitle) {
+  const moviesCollection = collection(db, "movies");
+  const getMovieName = query(
+    moviesCollection,
+    where("title", "==", movieTitle)
+  );
+  const querySnapshot = await getDocs(getMovieName);
+
+  let movies = [];
+  querySnapshot.forEach((doc) => {
+    movies.push(doc.data());
+  });
+
+  displaySearchResult(movies);
+}
+
+//Function to display search result
+function displaySearchResult(movies) {
+  const searchResult = document.getElementById("searchResults");
+  searchResult.innerHTML = "";
+
+  if (movies.length === 0) {
+    searchResult.innerHTML = "<p> No movies found, </p> ";
+    return;
+  }
+
+  movies.forEach((movie) => {
+    const movieElement = document.createElement("div");
+    movieElement.innerHTML = `
+    <img src = "${movie.image}" /> 
+    <h1>${movie.title} </h1>
+    <h2>${movie.genre} </h2>
+    <h3>${movie.releaseDate}</h3>
+    `;
+    searchResult.appendChild(movieElement);
+  });
+}
 
 // Function for adding Movie
 async function addMovie() {
@@ -194,5 +234,10 @@ async function deleteMovie(movieId) {
 let addMovieBtn = document
   .querySelector("#addMovieBtn")
   .addEventListener("click", addMovie);
+
+searchBtn.addEventListener("click", () => {
+  const searchInput = document.getElementById("searchInput");
+  searchMovie(searchInput.value);
+});
 
 updateMovieList();

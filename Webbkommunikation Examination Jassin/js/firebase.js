@@ -1,6 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
 
+//Object containing firebase configuration details
 const firebaseConfig = {
   apiKey: "AIzaSyBDS82W4QO38ZcjhLFtjcCbCCG4bw6MhMo",
   authDomain: "movie-library-19a8d.firebaseapp.com",
@@ -14,4 +15,5 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+// Exports the firestore database for use in other files
 export { db };

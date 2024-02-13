@@ -1,0 +1,82 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tool Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="component.css" />
+    <link rel="stylesheet" href="kassa.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="icon">
+        <img src="/img/Frame 9.png" alt="Logo" class="logo" />
+        <img src="/img/Frame 3.svg" alt="" />
+      </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+      <section class="welcome">
+        <h1>VÄLKOMMEN TILL KASSAN</h1>
+      </section>
+
+      <!-- Card for Loan Overview -->
+      <div class="card">
+        <div class="card-image">
+          <img src="/img/item-box.png" alt="" />
+        </div>
+        <div class="card-content">
+          <p class="card-header">Översikt över Ditt Lån</p>
+          <p>Utlånat Verktyg: [Verktygsnamn]</p>
+          <p>Utlåningsdatum: 2024-02-08</p>
+          <p>Återlämningsdatum: 2024-03-02</p>
+          <p class="price">Produktotal: 200 SEK</p>
+        </div>
+      </div>
+
+      <!-- Message Box -->
+      <div class="message-box">
+        <p>
+          Tack för att du delar med dig! Kom ihåg att återlämna verktyget i tid
+          för att göra det möjligt för andra i samhället att använda det. Vid
+          frågor eller förlängning av lån, vänligen kontakta oss.
+        </p>
+      </div>
+
+      <!-- Form Section -->
+      <form class="form">
+        <div class="top--form">
+          <h2 class="form-title">SLUTFÖR DIN BESTÄLLNING</h2>
+        </div>
+        <label for="user-info">Dina Uppgifter</label>
+        <p>Adressen ska vara i Sverige</p>
+
+        <input
+          type="email"
+          class="input-field"
+          placeholder="Mejladress"
+          required
+        />
+        <input
+          type="text"
+          class="input-field"
+          placeholder="Postnummer"
+          required
+        />
+
+        <button type="submit" class="submit-button">FORTSÄTT</button>
+
+        <div class="total-amount">Totalbelopp inkl. moms 250 kr</div>
+      </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">Footer content goes here.</footer>
+  </body>
+</html>

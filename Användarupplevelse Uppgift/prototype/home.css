@@ -1,0 +1,147 @@
+/* Base styles that apply to all devices */
+body {
+    font-family: 'Merriweather', sans-serif; /* Example, replace with your preferred font */
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #12372A;
+   
+
+}
+
+
+
+
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+
+.main-content  {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 300px; 
+    
+    height: auto;
+    gap: 20px; /* Space between grid items */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+    margin: auto;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    .signupbutton {
+        width: 147px;
+        border-radius: 100px;
+        background-color: beige;
+        padding: 4px 16px;
+        
+
+        p {
+            margin: 2px;
+            font-size: 11px;
+            color: black;
+            text-align: center;
+        }
+    }
+
+    h1 {
+        color: #35414B;
+        line-height: 40px;
+        font-style: Merriweather, sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    p {
+        font-style: Merriweather, sans-serif;
+        font-size: 12px;
+        line-height: 24px;
+        color: #4E5A65;
+    }
+}
+
+.tool-text {
+    background-color: var(--background-bg-color); /* Background color for grid items */
+    padding: 20px;
+    text-align: center;
+
+    .tool-text, h2 {
+        font-size: 36px;
+        font-style: Montserrat, sans-serif;
+        font-weight: bold;
+        color: var(--color-four);
+    }
+}
+
+.hero h1 {
+    color: #333;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    margin-top: 20px;
+}
+
+.signup-form input[type="email"], .button {
+    padding: 12px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.signup-form .button {
+    background-color: #436850;
+    color: white;
+    border: none;
+}
+
+.tool-library {
+    padding: 20px;
+}
+
+.site-footer {
+    background-color: #12372A;
+    color: white;
+    padding: 20px;
+    position: relative;
+    top: 6%;
+    text-align: center;
+}
+
+/* Responsive styles for iPhone 15 Pro Max */
+@media only screen and (max-width: 428px) {
+    .header, .main-content, .hero, .tool-library, .site-footer {
+        padding: 15px;
+    }
+
+    .hero h1, .tool-library h2 {
+        font-size: 18px; /* Slightly reduce font size for mobile readability */
+    }
+
+    .signup-form input[type="email"], .signup-form button {
+        font-size: 16px; /* Ensure text is easily readable on smaller screens */
+    }
+
+    .signup-form button, .signup-form input[type="email"] {
+        padding: 15px; /* Increase padding for easier interaction on touch devices */
+    }
+}
+
+  

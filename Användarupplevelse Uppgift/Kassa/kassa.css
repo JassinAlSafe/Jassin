@@ -1,0 +1,168 @@
+body {
+  font-family: "Merriweather", sans-serif; /* Example, replace with your preferred font */
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #12372a;
+  line-height: normal;
+}
+
+:root {
+  --background-bg-color: #12372a;
+  --color-four: #fbfada;
+}
+
+.header {
+  background-color: var(--background-bg-color);
+  border-bottom: solid 5px var(--color-four);
+  color: white;
+  padding: 20px;
+
+  .icon {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      width: 60px;
+      margin-left: 2%;
+    }
+  }
+}
+
+/* Main content styles */
+.main-content {
+    width: 100%;
+    height: 100%;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    width: 430px;
+    height: 88px;
+    background-color: #84a98c;
+}
+
+.welcome h1 {
+    
+    color: #fbfada;
+    font-size: 16px;
+}
+
+.card {
+    width: 430px;
+    height: 156px;
+    display: flex;
+  background-color: #52796f; /* Green background for the card */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 20px;
+}
+
+.card-image {
+    align-items: start;
+}
+
+
+.card-content {
+    font-style: merriweather;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+  font-size: 16px;
+  color: #fbfada;
+}
+
+.card-content p {
+    margin: 0;
+    margin-bottom: 5px;
+
+}
+
+.card-header {
+    padding-top: 1%;
+    padding-bottom: 2%;
+    font-weight: 700;
+}
+
+/* Message box styles */
+.message-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 430px;
+    height: 153px;
+  background-color: #84a98c; /* Darker green background */
+  padding: 10px;
+  margin-bottom: 20px;
+
+   p {
+    
+    width: 371px;
+    color: #fbfada;
+    line-height: 21px;
+    font-size: 17px;
+   }
+}
+
+
+/* Form styles */
+.form {
+    width: 430px;
+    height: 361px;
+  background-color: #52796f; /* Green background for the form */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.top--form {
+    width: 430px;
+    height: 39px;
+    background-color: black;
+
+    .form-title {
+        padding-top: 3%;
+        padding-left: 3%;
+        color: #fbfada;
+        font-size: 16px;
+        
+    }
+}
+
+.input-field {
+  background-color: #cad2c5; /* Light background for input */
+  border: none;
+  border-radius: 4px; /* Slightly rounded corners for input fields */
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%; /* Full width */
+}
+
+.submit-button {
+  background-color: #84a98c; /* Lighter green background for the button */
+  border: none;
+  border-radius: 4px; /* Slightly rounded corners for the button */
+  color: #2f3e46; /* Dark text color for contrast */
+  padding: 10px 20px;
+  font-size: 16px; /* Standard font size */
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #99a8a1; /* Hover state color change */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #354f52; /* Darker green background */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive adjustments might be needed for different screen sizes. */
+
+/* Colors, font sizes, and other measurements should be adjusted to exactly match the design as needed. */

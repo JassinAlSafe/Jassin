@@ -1,0 +1,136 @@
+:root {
+  /* Define font styles as CSS variables */
+  --main-font-family: "Merriweather", sans-serif;
+  --heading-font-family: "Montserrat", sans-serif;
+  --base-font-size: 16px;
+  --heading-font-size: 24px;
+}
+
+:root {
+  --background-bg-color: #12372a;
+  --color-two: #436850;
+  --color-three: #adbc9f;
+  --color-four: #fbfada;
+}
+
+.main-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto auto auto;
+  gap: 1rem;
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+  background-color: var(--background-bg-color);
+}
+
+.cart-header {
+  text-align: center;
+  background-color: var(--color-two);
+  color: var(--color-four);
+  padding: 0.5rem;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+}
+
+.cart-product {
+  display: flex;
+  
+  background-color: var(--color-two);
+  color: var(--color-four);
+  width: 100%;
+
+  .cart-image {
+    flex: 1;
+  }
+
+  p, h4 {
+    margin: 3px;
+  }
+
+  p {
+    font-size: var(--base-font-size);
+  }
+
+  .cart-description {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    
+  }
+
+
+}
+
+.loan-notice {
+    background-color: var(--color-two);
+    padding: 1rem;
+    font-size: 16px;
+    color: var(--color-four);
+    line-height: 21px;
+
+}
+
+.checkout-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    background-color: var(--color-two);
+    padding: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.order-summary {
+    padding: 1rem;
+
+    h2 {
+        margin-bottom: 1rem;
+        color: var(--color-four);
+        border-bottom: 1px solid #ccc;
+
+    }
+
+    p {
+        margin-bottom: 0.5rem;
+        color: var(--color-four);
+    }
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.email input {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+.continue-btn {
+    padding: 1rem;
+    background-color: var(--background-bg-color);
+    color: var(--color-four);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.total-amount {
+    background-color: var(--color-two);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    color: var(--color-four);
+    
+    p {
+        margin: 0;
+    }
+}

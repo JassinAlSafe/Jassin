@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main--content {
+    display: grid;
+    place-items: center;
+    padding: 16px;
+  }
+  
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(189px, 1fr));
+    gap: 20px;
+    padding: 16px;
+  }
+  
+  .card {
+    display: grid;
+    grid-template-rows: minmax(162px, auto);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+  }
+  
+  .img-box {
+    width: 100%;
+    height: 162px;
+    overflow: hidden;
+    background-color: #FBFADA;
+    border-radius: 10px 10px 0px 0px;
+
+  }
+  
+  .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+  }
+  
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #ADBC9F;
+    border-radius: 0px 0px 10px 10px;
+
+
+  }
+  
+  card-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+
+    h3 {
+        color: #FBFADA;
+        font-weight: bold;
+        font-size: 36px;
+        margin: 0;
+        margin-top: 2%;
+    }
+}
+
+.card-title, .card-description, .card-price {
+    margin-bottom: 5px;
+    color: #FBFADA;
+}
+
+
+.card-button {
+    color: #FBFADA;
+     align-self: flex-end;
+     border: none;
+     border-radius: 10px;
+     padding: 15px 25px;
+ }
+
+.rent {
+    background-color: #12372A;
+
+}
+
+.booked {
+    background-color: #D16014;
+}
+
+
+
+footer {
+
+    width: 100vw;
+    height: 15vh;
+    
+} 
+
+.loader {
+    
+    text-align: center;
+    width: 100%;
+    padding: 5%;
+    height: auto;
+    background-color: #436850;
+    color: #FBFADA;
+    font-size: 15px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+  
+    .card {
+      width: auto; /* Let card width be dynamic */
+    }
+
+    .img-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 162px;
+        overflow: hidden;
+        background-color: #FBFADA;
+        border-radius: 10px 10px 0px 0px;
+
+        img {
+            width: 50%;
+            
+            object-fit: contain;
+        }
+    
+      }
+  }
+

@@ -1,0 +1,125 @@
+:root {
+  /* Define font styles as CSS variables */
+  --main-font-family: "Merriweather", sans-serif;
+  --heading-font-family: "Montserrat", sans-serif;
+  --base-font-size: 16px;
+  --heading-font-size: 24px;
+}
+
+:root {
+  --background-bg-color: #12372a;
+  --color-two: #436850;
+  --color-three: #adbc9f;
+  --color-four: #fbfada;
+}
+
+.main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: var(--heading-font-size);
+    color: var(--color-four);
+  }
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  display: grid;
+  grid-template-rows: 3fr 2fr;
+  gap: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: var(--color-three);
+  overflow: hidden;
+}
+
+.product-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--color-four);
+}
+
+.product-image img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: var(--color-four);
+
+  h4 {
+    font-size: var(--heading-font-size);
+  }
+
+  p {
+    margin-top: 5px;
+    font-size: var(--base-font-size);
+  }
+}
+
+.productbutton {
+  align-self: flex-end;
+  margin: 20px;
+
+  button,
+  rent {
+    background-color: var(--background-bg-color);
+
+    color: var(--color-four);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: var(--base-font-size);
+    transition: background-color 0.3s;
+    margin: 20px auto;
+  }
+
+  .booked {
+    background-color: #d16014;
+  }
+}
+
+.footer {
+  color: var(--color-four);
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  align-items: center;
+
+  .footer-title {
+    background-color: var(--color-two);
+    width: 100%;
+
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-links {
+    padding: 20px;
+    background-color: var(--background-bg-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}

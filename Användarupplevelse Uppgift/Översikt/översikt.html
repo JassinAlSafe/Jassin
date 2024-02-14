@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/component.css" />
-    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="/Översikt/översikt.css" />
   </head>
   <body>
     <header class="page-header">
@@ -22,13 +22,14 @@
         <img src="/img/search.png" alt="" />
         <img src="/img//cart.png" alt="" />
         <a href="/Översikt/översikt.html"><img src="/img/profile.png" alt=""></a>   
-      </div>
+     </div>
     </header>
 
     <main class="main-container">
       <div class="cart-header">
-        <h1>VÄLKOMMEN TILL KASSAN</h1>
+        <h1>DINA LÅN</h1>
       </div>
+
       <div class="cart-product">
         <div class="cart-image">
           <img src="/img/item-box.png" alt="" />
@@ -38,9 +39,30 @@
           <p>Utlånat Verktyg:[Verktygsnamn]</p>
           <p>Lånedatum: 2024-02-08</p>
           <p>Återlämningsdatum: 2023-03-02</p>
-          <span class="cart-total">
-            <p>Produktotal: 200 SEK</p>
-          </span>
+        </div>
+      </div>
+      <!--item 2 -->
+      <div class="cart-product">
+        <div class="cart-image">
+          <img src="/img/item-box.png" alt="" />
+        </div>
+        <div class="cart-description">
+          <h4>Översikt över Ditt Lån</h4>
+          <p>Utlånat Verktyg:[Verktygsnamn]</p>
+          <p>Lånedatum: 2024-02-08</p>
+          <p>Återlämningsdatum: 2023-03-02</p>
+        </div>
+      </div>
+      <!--item 3 -->
+      <div class="cart-product">
+        <div class="cart-image">
+          <img src="/img/item-box.png" alt="" />
+        </div>
+        <div class="cart-description">
+          <h4>Översikt över Ditt Lån</h4>
+          <p>Utlånat Verktyg:[Verktygsnamn]</p>
+          <p>Lånedatum: 2024-02-08</p>
+          <p>Återlämningsdatum: 2023-03-02</p>
         </div>
       </div>
 
@@ -51,26 +73,11 @@
           frågor eller förlängning av lån, vänligen kontakta oss.
         </p>
       </section>
-
-      <div class="checkout-container">
-        <div class="order-summary">
-          <h2>SLUTFÖR DIN BESTÄLLNING</h2>
-          <div class="customer-details">
-            <p>Dina Uppgifter</p>
-            <p>Adressen ska vara i Sverige</p>
-          </div>
-          <form class="email">
-            <input type="email" name="" id="" placeholder="Mejladress" />
-            <input type="text" name="" id="" placeholder="Postnummer" />
-            <a href="/reciept/index.html" class="continue-btn">FORTSÄTT</a>
-
-          </form>
-        </div>
-        <div class="total-amount">
-          <p>Totalbelopp inkl. moms</p>
-          <p>250 kr</p>
-        </div>
-      </div>
+      <section class="button">
+        <a href="/home fixed/homefixed.html"><button class="continue-btn">TILLBAKA TILL HEMSIDAN</button></a>
+      </section>
     </main>
+
+    <script type="module" src="index.js"></script>
   </body>
 </html>

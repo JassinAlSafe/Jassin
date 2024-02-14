@@ -3,7 +3,7 @@
   --main-font-family: "Merriweather", sans-serif;
   --heading-font-family: "Montserrat", sans-serif;
   --base-font-size: 16px;
-  --heading-font-size: 24px;
+  --heading-font-size: 32px;
 }
 
 :root {
@@ -22,6 +22,7 @@
   h1 {
     font-size: var(--heading-font-size);
     color: var(--color-four);
+    font-family: var(--heading-font-family);
   }
 }
 
@@ -110,7 +111,7 @@
   .footer-title {
     background-color: var(--color-two);
     width: 100%;
-
+    font-family: var(--heading-font-family);
     padding: 20px;
     text-align: center;
   }

@@ -1,0 +1,72 @@
+:root {
+  /* Define font styles as CSS variables */
+  --main-font-family: "Merriweather", sans-serif;
+  --heading-font-family: "Montserrat", sans-serif;
+  --base-font-size: 16px;
+  --heading-font-size: 24px;
+}
+
+:root {
+  --background-bg-color: #12372a;
+  --color-two: #436850;
+  --color-three: #adbc9f;
+  --color-four: #fbfada;
+  --color-dark: #35414B;
+}
+
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 20px;
+  padding-top: 3rem;
+
+  .logo {
+    align-self: center;
+  }
+}
+
+.confirmation-container {
+  background-color: var(--color-three);
+  color: var(--color-dark);
+  max-width: 600px;
+  height: 40rem;
+  margin: 20px;
+  padding: 20px;
+
+  h1 {
+    font-family: var(--heading-font-family);
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--color-dark);
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 10px;
+    font-size: var(--base-font-size);
+  }
+}
+
+.transaction-details {
+    padding-top: 2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 18px;
+    
+}
+
+.continue-btn, .back {
+    align-self: center;
+    width: 350px;
+    padding: 1rem;
+    background-color: var(--color-two);
+    color: var(--color-four);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+

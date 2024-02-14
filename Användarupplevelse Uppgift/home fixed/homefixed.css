@@ -9,7 +9,7 @@
   --main-font-family: "Merriweather", sans-serif;
   --heading-font-family: "Montserrat", sans-serif;
   --base-font-size: 16px;
-  --heading-font-size: 24px;
+  --heading-font-size: 32px;
 }
 
 :root {
@@ -17,6 +17,8 @@
   --color-two: #436850;
   --color-three: #adbc9f;
   --color-four: #fbfada;
+  --color-dark: #35414B;
+
 }
 
 .main {
@@ -25,13 +27,16 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
+
 }
 
 .title {
   font-size: var(--heading-font-size);
   color: var(--color-four);
+  font-family: var(--heading-font-family);  
   margin: 2%;
   min-height: 4rem;
+
 }
 
 .card {

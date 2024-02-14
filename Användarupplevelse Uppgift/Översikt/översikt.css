@@ -1,0 +1,37 @@
+:root {
+    /* Define font styles as CSS variables */
+    --main-font-family: "Merriweather", sans-serif;
+    --heading-font-family: "Montserrat", sans-serif;
+    --base-font-size: 16px;
+    --heading-font-size: 24px;
+  }
+  
+  :root {
+    --background-bg-color: #12372a;
+    --color-two: #436850;
+    --color-three: #adbc9f;
+    --color-four: #fbfada;
+    --color-dark: #35414B;
+  }
+
+
+.main-container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto ;
+    gap: 1rem;
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+    background-color: var(--background-bg-color);
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .cart-header {
+    background-color: transparent;
+  }

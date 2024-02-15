@@ -114,6 +114,7 @@
     background-color: var(--color-two);
     width: 100%;
     font-family: var(--heading-font-family);
+    font-size: var(--base-font-size);
     padding: 20px;
     text-align: center;
   }

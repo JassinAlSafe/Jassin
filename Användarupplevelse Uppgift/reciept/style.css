@@ -59,6 +59,7 @@
 }
 
 .continue-btn, .back {
+    margin: 3px;
     align-self: center;
     width: 350px;
     padding: 1rem;

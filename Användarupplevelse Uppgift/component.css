@@ -18,7 +18,7 @@
   --color-three: #adbc9f;
   --color-four: #fbfada;
   --color-dark: #35414b;
-  --color-booked-button: #D16014;
+  --color-booked-button: #d16014;
 }
 
 body,
@@ -68,9 +68,9 @@ body {
 
   .header-nav {
     margin-top: 10px;
-    
+
     img {
-        margin-left: 15px;
+      margin-left: 15px;
     }
   }
 }
@@ -90,17 +90,15 @@ body {
 }
 
 .continue-btn {
-    align-self: center;
-    width: 350px;
-    padding: 1rem;
-    background-color: var(--color-two);
-    color: var(--color-four);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  align-self: center;
+  width: 350px;
+  padding: 1rem;
+  background-color: var(--color-two);
+  color: var(--color-four);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-
-
 
 .tool-header {
   display: flex;

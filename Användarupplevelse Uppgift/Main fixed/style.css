@@ -11,6 +11,8 @@
   --color-two: #436850;
   --color-three: #adbc9f;
   --color-four: #fbfada;
+  --color-booked-button: #D16014;
+
 }
 
 .main {
@@ -96,7 +98,7 @@
   }
 
   .booked {
-    background-color: #d16014;
+    background-color: var(--color-booked-button);
   }
 }
 

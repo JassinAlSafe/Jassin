@@ -1,0 +1,18 @@
+@import "./index.scss";
+
+.App {
+  text-align: center;
+}
+
+.AppHeader {
+  min-height: 100vh;
+  width: 640px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: $primary-color;
+  
+}

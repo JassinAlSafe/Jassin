@@ -1,0 +1,105 @@
+@import "/src//index.scss";
+
+.Page {
+  width: 670px;
+  button {
+    color: white;
+    background-color: $primary-color-btn;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+
+  button:hover {
+    background-color: $primary-highlight-btn;
+  }
+
+  button:disabled {
+    background-color: lightgrey;
+  }
+
+  button:disabled:hover {
+    background-color: lightgrey;
+  }
+
+  .deleteBtn {
+    background-color: white;
+    color: black;
+    padding: 1.2rem;
+    border: 1px solid black;
+    margin: 1em;
+    border-radius: 5px;
+   
+  }
+}
+
+.card {
+  padding-bottom: 10%;
+}
+
+.cardStack {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeAddBtnContainer {
+  text-align: center;
+  padding-top: 20%;
+
+  .homeAddBtn {
+    box-shadow: 2px 2px 5px 0px lightgrey;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: white;
+    color: black;
+    width: 382px;
+    height: 80px;
+    :hover {
+      color: $primary-highlight-btn;
+      border: 2px solid $primary-highlight-btn;
+      box-shadow: none;
+    }
+  }
+}
+
+.Body {
+  background-color: $primary-background;
+  padding: 60px 0px 100px 0px;
+  margin: 0;
+  .addCardTitle {
+    font-size: 36px;
+    margin: 10px 0px 20px 0px;
+  }
+}
+
+.addCardContainer {
+  cursor: default;
+}
+
+.cardForm {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto 20px auto;
+  width: 55%;
+  label {
+    color: $secondary-color;
+    font: 20px;
+    text-align: left;
+  }
+  input {
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid $secondary-color;
+    margin: 2px 0px 10px 0px;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  select {
+    font-size: 20px;
+  }
+}

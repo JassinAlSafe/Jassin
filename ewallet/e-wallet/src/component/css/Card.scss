@@ -1,0 +1,16 @@
+@import "/src//index.scss";
+@import "/src/creditcardstyles/styles.scss";
+
+.cardContainer {
+  color: rgba(34, 34, 34, 0.6);
+  padding: 0px 0px 20px 0px;
+  margin: 0px;
+  font-size: 18px;
+  .activeCard {
+    div_first-of-type:hover {
+      cursor: default;
+      transform: scale(1.028);
+      box-shadow: 0 13px 40px -5px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
